@@ -34,6 +34,7 @@ class _LoginPageState extends State<LoginPage> {
                     if (value!.isEmpty) {
                       return 'Enter an Email Id';
                     }
+                    return null;
                   },
                   controller: emailcontroller,
                   decoration: InputDecoration(
@@ -64,6 +65,7 @@ class _LoginPageState extends State<LoginPage> {
                     if (value!.isEmpty) {
                       return 'Password is Mandatory';
                     }
+                    return null;
                   },
                   controller: passwordcontroller,
                   decoration: InputDecoration(
