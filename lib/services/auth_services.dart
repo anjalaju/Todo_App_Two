@@ -50,6 +50,7 @@ class AuthService {
       await _pref.setString('token', token!);
       await _pref.setString('name', snap['name']);
       await _pref.setString('email', snap['email']);
+      await _pref.setString('uid', snap['uid']);
       return snap;
     }
   }

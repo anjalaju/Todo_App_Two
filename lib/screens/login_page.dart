@@ -2,8 +2,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:todo_app/models/user_model.dart';
 import 'package:todo_app/screens/homepage.dart';
-import 'package:todo_app/screens/sign_up_page.dart';
 import 'package:todo_app/services/auth_services.dart';
+import 'package:todo_app/screens/sign_up_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});

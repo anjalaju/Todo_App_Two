@@ -1,10 +1,9 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:todo_app/models/user_model.dart';
 import 'package:todo_app/screens/homepage.dart';
-import 'package:todo_app/screens/login_page.dart';
 import 'package:todo_app/services/auth_services.dart';
+import 'package:todo_app/screens/login_page.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({super.key});

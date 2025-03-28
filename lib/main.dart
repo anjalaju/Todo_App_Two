@@ -1,7 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:todo_app/firebase_options.dart';
-import 'package:todo_app/screens/sign_up_page.dart';
 import 'package:todo_app/screens/splash.dart';
 
 Future<void> main() async {
