@@ -1,7 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:todo_app/firebase_options.dart';
-import 'package:todo_app/screens/login_page.dart';
+import 'package:todo_app/screens/sign_up_page.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,8 +16,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(scaffoldBackgroundColor: Color(0xff0E1D3E)),
-      home: LoginPage(),
+      theme: ThemeData(
+        textTheme: TextTheme(
+          displaySmall: TextStyle(
+            color: const Color.fromARGB(255, 231, 210, 210),
+            fontSize: 15,
+          ),
+          displayMedium: TextStyle(color: Colors.white, fontSize: 20),
+        ),
+        scaffoldBackgroundColor: Color(0xff0E1D3E),
+      ),
+      home: SignUpPage(),
     );
   }
 }
